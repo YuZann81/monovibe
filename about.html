@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>monovibe</title>
+    <title>Tentang Kami - MonoVibe</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -16,14 +16,15 @@
     <script src="js/fungsi.js" defer></script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-
+            // Initialize feather icons
             feather.replace();
 
-
+            // Rerun feather.replace() after a short delay to ensure icons are loaded
             setTimeout(() => {
                 feather.replace();
             }, 100);
 
+            // Add smooth page transitions
             document.querySelectorAll('a').forEach(link => {
                 link.addEventListener('click', function (e) {
                     if (this.href.includes(window.location.origin)) {
@@ -51,8 +52,8 @@
 
         <nav class="main-nav" aria-label="Main navigation">
             <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="about.html">Tentang Kami</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">Tentang Kami</a></li>
                 <li><a href="list.html">List</a></li>
             </ul>
         </nav>
@@ -110,19 +111,44 @@
 
     <main>
         <div class="container">
-            <section class="hero">
-                <h1 class="welcome-text">Welcome to MonoVibe</h1>
-                <p class="motto">Discover the perfect blend of style and simplicity</p>
-                <div class="hero-image">
-                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80"
-                        alt="Modern workspace with laptop and coffee" class="featured-image">
+            <section class="about-section">
+                <h1 class="section-title">Tentang MonoVibe</h1>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2>Visi Kami</h2>
+                        <p>Menjadi platform terdepan dalam menghadirkan pengalaman digital yang memadukan kesederhanaan
+                            dengan kecanggihan modern.</p>
+
+                        <h2>Misi Kami</h2>
+                        <p>Memberikan solusi digital yang elegan dan efektif untuk setiap pengguna, dengan fokus pada:
+                        </p>
+                        <ul>
+                            <li>Desain yang minimalis dan fungsional</li>
+                            <li>Pengalaman pengguna yang intuitif</li>
+                            <li>Performa yang optimal</li>
+                            <li>Inovasi berkelanjutan</li>
+                        </ul>
+                    </div>
+                    <div class="team-section">
+                        <h2>Tim Kami</h2>
+                        <div class="team-grid">
+                            <div class="team-member">
+                                <img src="img/img1.jpg" alt="Team Member 1" class="member-image">
+                                <h3>Razzan Gianni</h3>
+                                <p>Founder & CEO</p>
+                            </div>
+                            <div class="team-member">
+                                <img src="img/img2.jpg" alt="Team Member 2" class="member-image">
+                                <h3>Dezan Raditya</h3>
+                                <p>Creative Director</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>
     </main>
 
-
-    <!-- Footer -->
     <footer class="site-footer">
         <div class="container">
             <p>&copy; 2024 MonoVibe. All rights reserved.</p>
